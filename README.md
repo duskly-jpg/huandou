@@ -1,5 +1,9 @@
 # 幻豆 · Android 浏览器客户端
 
+<p align="center">
+  <img src="screenshots/main.jpg" width="360" alt="幻豆运行截图">
+</p>
+
 一个不依赖 Gradle、不依赖 Android Studio 的 WebView 浏览器。用 aapt2、javac、R8、zipalign、apksigner 五条命令串成构建链，从源码到签名 APK 全流程可在终端完成。
 
 未加固包 391 KB。目标设备 Android 7.0（API 24）及以上。
