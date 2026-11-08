@@ -6,7 +6,7 @@
 
 一个不依赖 Gradle、不依赖 Android Studio 的 WebView 浏览器。用 aapt2、javac、R8、zipalign、apksigner 五条命令串成构建链，从源码到签名 APK 全流程可在终端完成。
 
-未加固包 391 KB。目标设备 Android 7.0（API 24）及以上。
+未加固包 394 KB。目标设备 Android 7.0（API 24）及以上。
 
 ## 功能
 
@@ -58,7 +58,7 @@ export HUANDOU_KS_PASS='你的签名密码'        # 首次构建会据此生成
 AndroidManifest.xml
 build.sh                 构建脚本（唯一入口）
 proguard-rules.pro       R8 keep 规则
-src/com/huandou/app/      38 个 Java 类
+src/com/huandou/app/      37 个 Java 类
 res/                      资源与图标
 libs/                     BouncyCastle（X.509 解析，无 Gradle 依赖管理，直接放 jar）
 test/                     纯 JVM 单测（HostRules、GateRules）
@@ -70,8 +70,8 @@ tools/method_size.py      统计方法字节码长度（判断能否进指令级
 
 ```bash
 javac --release 8 -encoding UTF-8 -d /tmp/t test/*.java src/com/huandou/app/HostRules.java src/com/huandou/app/GateRules.java
-java -cp /tmp/t HostRulesTest
-java -cp /tmp/t GateRulesTest
+java -cp /tmp/t com.huandou.app.HostRulesTest
+java -cp /tmp/t com.huandou.app.GateRulesTest
 ```
 
 49 项断言，覆盖域名边界匹配（含 `evil-example.com` 冒充 `example.com` 这类子串陷阱）与准入规则判定。
