@@ -1,5 +1,7 @@
 # 幻豆 · Android 浏览器客户端
 
+[![tests](https://github.com/duskly-jpg/huandou/actions/workflows/tests.yml/badge.svg)](https://github.com/duskly-jpg/huandou/actions/workflows/tests.yml)
+
 <p align="center">
   <img src="screenshots/main.jpg" width="360" alt="幻豆运行截图">
 </p>
