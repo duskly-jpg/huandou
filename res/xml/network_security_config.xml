@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  网络安全配置（v1.6 起）：
+  - 仅信任系统 CA。
+  - 不再内置 / 信任任何「幻豆 MITM CA」：v1.6 改为「应用层自定义 SSLSocketFactory」
+    替换 TLS 参数，不经过本地中间人代理，因此没有需要信任的自签 CA。
+  - 不信任 user 安装的 CA，避免被其他代理意外劫持。
+-->
+<network-security-config>
+    <base-config>
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

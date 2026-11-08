@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/brand</item>
+        <item name="android:colorBackground">@color/brand</item>
+        <item name="android:statusBarColor">@color/brand</item>
+        <item name="android:navigationBarColor">@color/brand</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:colorAccent">@color/accent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- Every AlertDialog in the app shares this glass theme. -->
+        <item name="android:alertDialogTheme">@style/GlassDialogTheme</item>
+    </style>
+
+    <!-- Dialogs are translucent cards. The system dim is disabled on purpose:
+         the native BlurBackdrop layer supplies a single, controlled 40% mask
+         so the web page (including its bottom tab bar) stays readable. -->
+    <style name="GlassDialogTheme" parent="@android:style/Theme.Material.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/dlg_glass</item>
+        <item name="android:backgroundDimAmount">0</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/GlassDialogAnim</item>
+        <item name="android:colorAccent">@color/accent</item>
+        <item name="android:textColorPrimary">@color/text_main</item>
+        <item name="android:textColorAlertDialogListItem">@color/text_main</item>
+        <item name="android:textColorSecondary">@color/text_sub</item>
+    </style>
+
+    <style name="GlassDialogAnim" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/dlg_enter</item>
+        <item name="android:windowExitAnimation">@anim/dlg_exit</item>
+    </style>
+</resources>

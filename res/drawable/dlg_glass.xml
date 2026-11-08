@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Translucent rounded card used as the window background of every dialog.
+     The real dim + blur is drawn by the native backdrop layer underneath. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#DE171021" />
+    <stroke android:width="1dp" android:color="#33FFFFFF" />
+    <corners android:radius="20dp" />
+    <padding
+        android:left="6dp"
+        android:top="6dp"
+        android:right="6dp"
+        android:bottom="6dp" />
+</shape>

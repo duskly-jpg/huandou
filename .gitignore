@@ -1,0 +1,21 @@
+# 构建产物
+build/
+*.apk
+*.idsig
+*.class
+
+# 签名材料：任何情况下都不入库
+keystore/
+certs/
+*.jks
+*.keystore
+*.p12
+*.pem
+*.key
+
+# 混淆映射（只对发布排障有用，且会暴露类结构）
+mapping/
+
+# 系统垃圾
+.DS_Store
+Thumbs.db
