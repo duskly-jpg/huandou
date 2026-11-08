@@ -44,7 +44,7 @@ export HUANDOU_KS_PASS='你的签名密码'        # 首次构建会据此生成
 ./build.sh
 ```
 
-产物：`build/幻豆_1.9.7.apk`，版本号只改 `build.sh` 顶部的 `VER_CODE` 与 `VER_NAME`。
+产物：`build/幻豆_1.9.8.apk`，版本号只改 `build.sh` 顶部的 `VER_CODE` 与 `VER_NAME`。
 
 首次构建会在 `keystore/release.jks` 生成新密钥。换机或换 keystore 后签名指纹变化，依赖签名的功能（如可信链的 APK 摘要校验）需同步更新服务端配置。
 

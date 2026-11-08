@@ -8,8 +8,8 @@ BT="$SDK/build-tools/34.0.0"
 AJ="$SDK/platforms/android-34/android.jar"
 OUT="$HERE/build"
 # 版本号唯一来源：改这两行即可，文件名与 APK 内的 versionName 都跟着走。
-VER_CODE=57
-VER_NAME="1.9.7"
+VER_CODE=58
+VER_NAME="1.9.8"
 APK="$OUT/幻豆_${VER_NAME}.apk"
 
 # 签名材料不进仓库：keystore 路径与密码都从环境变量取。
