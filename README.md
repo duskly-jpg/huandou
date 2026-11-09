@@ -25,7 +25,7 @@
 **设备可信链**
 - 在 AndroidKeyStore 内生成 EC P-256 密钥，由 TEE 签发 Key Attestation
 - 解析 X.509 709 扩展（OID `1.3.6.1.4.1.11129.2.1.17`），取安全等级、challenge 回显、APK 签名摘要
-- 交由服务端验签后签发 7 天短期凭据，无凭据不进入主界面
+- 交由服务端验签后签发 7 天短期凭据，无凭据不进入主界面（服务端实现见 [huandou-attest](https://github.com/duskly-jpg/huandou-attest)）
 
 **离线安全浏览**
 - 十余万条钓鱼与恶意域名的本地库，仅存 FNV-1a 指纹（单条 8 字节，全库约 1 MB）
