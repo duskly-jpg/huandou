@@ -4,6 +4,8 @@
 [![release](https://img.shields.io/github/v/release/duskly-jpg/huandou)](https://github.com/duskly-jpg/huandou/releases)
 [![license](https://img.shields.io/github/license/duskly-jpg/huandou)](LICENSE)
 [![tests](https://img.shields.io/badge/tests-49%20passing-brightgreen)](#测试)
+[![codeql](https://img.shields.io/github/actions/workflow/status/duskly-jpg/huandou/codeql.yml?branch=main&label=codeql)](https://github.com/duskly-jpg/huandou/actions/workflows/codeql.yml)
+![build](https://img.shields.io/badge/build-gradle--free-orange)
 
 <p align="center">
   <img src="screenshots/main.jpg" width="360" alt="幻豆运行截图">
