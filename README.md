@@ -3,7 +3,7 @@
 [![tests](https://github.com/duskly-jpg/huandou/actions/workflows/tests.yml/badge.svg)](https://github.com/duskly-jpg/huandou/actions/workflows/tests.yml)
 [![release](https://img.shields.io/github/v/release/duskly-jpg/huandou)](https://github.com/duskly-jpg/huandou/releases)
 [![license](https://img.shields.io/github/license/duskly-jpg/huandou)](LICENSE)
-![tests](https://img.shields.io/badge/tests-49%20passing-brightgreen)
+[![tests](https://img.shields.io/badge/tests-49%20passing-brightgreen)](#测试)
 
 <p align="center">
   <img src="screenshots/main.jpg" width="360" alt="幻豆运行截图">
